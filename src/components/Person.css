@@ -1,34 +1,54 @@
 .Person {
-  box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 2px;
-  padding: 0.5em;
-  width: 120px;
-  height: 160px;
-  background-color: white;
-}
-
-.Person:hover {
-  zoom: 120%;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .Person-image img {
-  border-radius: 2px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
-}
-
-.Person-name, .Person-location {
-  font-size: 10pt;
-  overflow: hidden;
-  white-space: nowrap; 
-  text-overflow: ellipsis;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .Person-name {
-  font-size: 10pt;
+  font-size: 1.2em;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .Person-location {
-  font-size: 9pt;
+  color: #666;
+  margin-top: 6px;
+  font-size: 0.95em;
+}
+
+.toggle-button {
+  margin-top: 12px;
+  padding: 6px 12px;
+  font-size: 0.9em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.FichaPersonal-container {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: all 0.3s ease;
 }
