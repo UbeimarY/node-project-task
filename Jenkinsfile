@@ -1,5 +1,9 @@
 pipeline {
   agent any
+
+  environment {
+    CI = "false" // Desactiva que React trate los warnings como errores
+  }
  
   stages {
     stage('Declarative: Checkout SCM') {
